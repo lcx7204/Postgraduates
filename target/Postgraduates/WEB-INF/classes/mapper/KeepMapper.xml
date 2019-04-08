@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yixuan.dao.KeepMapper" >
+  <resultMap id="BaseResultMap" type="com.yixuan.entity.Keep" >
+    <id column="collection_id" property="collectionId" jdbcType="VARCHAR" />
+    <result column="collection_user" property="collectionUser" jdbcType="VARCHAR" />
+    <result column="collection_info" property="collectionInfo" jdbcType="VARCHAR" />
+    <result column="collection_date" property="collectionDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    collection_id, collection_user, collection_info, collection_date
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.yixuan.entity.KeepExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from keep
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from keep
+    where collection_id = #{collectionId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from keep
+    where collection_id = #{collectionId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.yixuan.entity.KeepExample" >
+    delete from keep
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.yixuan.entity.Keep" >
+    insert into keep (collection_id, collection_user, collection_info, 
+      collection_date)
+    values (#{collectionId,jdbcType=VARCHAR}, #{collectionUser,jdbcType=VARCHAR}, #{collectionInfo,jdbcType=VARCHAR}, 
+      #{collectionDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yixuan.entity.Keep" >
+    insert into keep
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="collectionId != null" >
+        collection_id,
+      </if>
+      <if test="collectionUser != null" >
+        collection_user,
+      </if>
+      <if test="collectionInfo != null" >
+        collection_info,
+      </if>
+      <if test="collectionDate != null" >
+        collection_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="collectionId != null" >
+        #{collectionId,jdbcType=VARCHAR},
+      </if>
+      <if test="collectionUser != null" >
+        #{collectionUser,jdbcType=VARCHAR},
+      </if>
+      <if test="collectionInfo != null" >
+        #{collectionInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="collectionDate != null" >
+        #{collectionDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.yixuan.entity.KeepExample" resultType="java.lang.Integer" >
+    select count(*) from keep
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update keep
+    <set >
+      <if test="record.collectionId != null" >
+        collection_id = #{record.collectionId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectionUser != null" >
+        collection_user = #{record.collectionUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectionInfo != null" >
+        collection_info = #{record.collectionInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectionDate != null" >
+        collection_date = #{record.collectionDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update keep
+    set collection_id = #{record.collectionId,jdbcType=VARCHAR},
+      collection_user = #{record.collectionUser,jdbcType=VARCHAR},
+      collection_info = #{record.collectionInfo,jdbcType=VARCHAR},
+      collection_date = #{record.collectionDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yixuan.entity.Keep" >
+    update keep
+    <set >
+      <if test="collectionUser != null" >
+        collection_user = #{collectionUser,jdbcType=VARCHAR},
+      </if>
+      <if test="collectionInfo != null" >
+        collection_info = #{collectionInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="collectionDate != null" >
+        collection_date = #{collectionDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where collection_id = #{collectionId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yixuan.entity.Keep" >
+    update keep
+    set collection_user = #{collectionUser,jdbcType=VARCHAR},
+      collection_info = #{collectionInfo,jdbcType=VARCHAR},
+      collection_date = #{collectionDate,jdbcType=TIMESTAMP}
+    where collection_id = #{collectionId,jdbcType=VARCHAR}
+  </update>
+</mapper>

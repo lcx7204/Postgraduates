@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yixuan.dao.RecommendMapper" >
+  <resultMap id="BaseResultMap" type="com.yixuan.entity.Recommend" >
+    <id column="recommend_id" property="recommendId" jdbcType="VARCHAR" />
+    <result column="recommend_category" property="recommendCategory" jdbcType="VARCHAR" />
+    <result column="recommend_title" property="recommendTitle" jdbcType="VARCHAR" />
+    <result column="recommend_content" property="recommendContent" jdbcType="VARCHAR" />
+    <result column="recommend_icon" property="recommendIcon" jdbcType="VARCHAR" />
+    <result column="recommend_detail" property="recommendDetail" jdbcType="VARCHAR" />
+    <result column="company_name" property="companyName" jdbcType="VARCHAR" />
+    <result column="author" property="author" jdbcType="VARCHAR" />
+    <result column="publish_date" property="publishDate" jdbcType="DATE" />
+    <result column="price" property="price" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    recommend_id, recommend_category, recommend_title, recommend_content, recommend_icon, 
+    recommend_detail, company_name, author, publish_date, price
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.yixuan.entity.RecommendExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from recommend
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from recommend
+    where recommend_id = #{recommendId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from recommend
+    where recommend_id = #{recommendId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.yixuan.entity.RecommendExample" >
+    delete from recommend
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.yixuan.entity.Recommend" >
+    insert into recommend (recommend_id, recommend_category, recommend_title, 
+      recommend_content, recommend_icon, recommend_detail, 
+      company_name, author, publish_date, 
+      price)
+    values (#{recommendId,jdbcType=VARCHAR}, #{recommendCategory,jdbcType=VARCHAR}, #{recommendTitle,jdbcType=VARCHAR}, 
+      #{recommendContent,jdbcType=VARCHAR}, #{recommendIcon,jdbcType=VARCHAR}, #{recommendDetail,jdbcType=VARCHAR}, 
+      #{companyName,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, #{publishDate,jdbcType=DATE}, 
+      #{price,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yixuan.entity.Recommend" >
+    insert into recommend
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recommendId != null" >
+        recommend_id,
+      </if>
+      <if test="recommendCategory != null" >
+        recommend_category,
+      </if>
+      <if test="recommendTitle != null" >
+        recommend_title,
+      </if>
+      <if test="recommendContent != null" >
+        recommend_content,
+      </if>
+      <if test="recommendIcon != null" >
+        recommend_icon,
+      </if>
+      <if test="recommendDetail != null" >
+        recommend_detail,
+      </if>
+      <if test="companyName != null" >
+        company_name,
+      </if>
+      <if test="author != null" >
+        author,
+      </if>
+      <if test="publishDate != null" >
+        publish_date,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recommendId != null" >
+        #{recommendId,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendCategory != null" >
+        #{recommendCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendTitle != null" >
+        #{recommendTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendContent != null" >
+        #{recommendContent,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendIcon != null" >
+        #{recommendIcon,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendDetail != null" >
+        #{recommendDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="companyName != null" >
+        #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null" >
+        #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="publishDate != null" >
+        #{publishDate,jdbcType=DATE},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.yixuan.entity.RecommendExample" resultType="java.lang.Integer" >
+    select count(*) from recommend
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update recommend
+    <set >
+      <if test="record.recommendId != null" >
+        recommend_id = #{record.recommendId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recommendCategory != null" >
+        recommend_category = #{record.recommendCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recommendTitle != null" >
+        recommend_title = #{record.recommendTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recommendContent != null" >
+        recommend_content = #{record.recommendContent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recommendIcon != null" >
+        recommend_icon = #{record.recommendIcon,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recommendDetail != null" >
+        recommend_detail = #{record.recommendDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="record.companyName != null" >
+        company_name = #{record.companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.author != null" >
+        author = #{record.author,jdbcType=VARCHAR},
+      </if>
+      <if test="record.publishDate != null" >
+        publish_date = #{record.publishDate,jdbcType=DATE},
+      </if>
+      <if test="record.price != null" >
+        price = #{record.price,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update recommend
+    set recommend_id = #{record.recommendId,jdbcType=VARCHAR},
+      recommend_category = #{record.recommendCategory,jdbcType=VARCHAR},
+      recommend_title = #{record.recommendTitle,jdbcType=VARCHAR},
+      recommend_content = #{record.recommendContent,jdbcType=VARCHAR},
+      recommend_icon = #{record.recommendIcon,jdbcType=VARCHAR},
+      recommend_detail = #{record.recommendDetail,jdbcType=VARCHAR},
+      company_name = #{record.companyName,jdbcType=VARCHAR},
+      author = #{record.author,jdbcType=VARCHAR},
+      publish_date = #{record.publishDate,jdbcType=DATE},
+      price = #{record.price,jdbcType=DECIMAL}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yixuan.entity.Recommend" >
+    update recommend
+    <set >
+      <if test="recommendCategory != null" >
+        recommend_category = #{recommendCategory,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendTitle != null" >
+        recommend_title = #{recommendTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendContent != null" >
+        recommend_content = #{recommendContent,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendIcon != null" >
+        recommend_icon = #{recommendIcon,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendDetail != null" >
+        recommend_detail = #{recommendDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="companyName != null" >
+        company_name = #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null" >
+        author = #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="publishDate != null" >
+        publish_date = #{publishDate,jdbcType=DATE},
+      </if>
+      <if test="price != null" >
+        price = #{price,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where recommend_id = #{recommendId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yixuan.entity.Recommend" >
+    update recommend
+    set recommend_category = #{recommendCategory,jdbcType=VARCHAR},
+      recommend_title = #{recommendTitle,jdbcType=VARCHAR},
+      recommend_content = #{recommendContent,jdbcType=VARCHAR},
+      recommend_icon = #{recommendIcon,jdbcType=VARCHAR},
+      recommend_detail = #{recommendDetail,jdbcType=VARCHAR},
+      company_name = #{companyName,jdbcType=VARCHAR},
+      author = #{author,jdbcType=VARCHAR},
+      publish_date = #{publishDate,jdbcType=DATE},
+      price = #{price,jdbcType=DECIMAL}
+    where recommend_id = #{recommendId,jdbcType=VARCHAR}
+  </update>
+</mapper>

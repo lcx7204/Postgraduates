@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yixuan.dao.ChatMapper" >
+  <resultMap id="BaseResultMap" type="com.yixuan.entity.Chat" >
+    <id column="chat_id" property="chatId" jdbcType="INTEGER" />
+    <result column="send_id" property="sendId" jdbcType="VARCHAR" />
+    <result column="access_id" property="accessId" jdbcType="VARCHAR" />
+    <result column="chat_content" property="chatContent" jdbcType="VARCHAR" />
+    <result column="chat_date" property="chatDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    chat_id, send_id, access_id, chat_content, chat_date
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.yixuan.entity.ChatExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from chat
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from chat
+    where chat_id = #{chatId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from chat
+    where chat_id = #{chatId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.yixuan.entity.ChatExample" >
+    delete from chat
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.yixuan.entity.Chat" >
+    insert into chat (chat_id, send_id, access_id, 
+      chat_content, chat_date)
+    values (#{chatId,jdbcType=INTEGER}, #{sendId,jdbcType=VARCHAR}, #{accessId,jdbcType=VARCHAR}, 
+      #{chatContent,jdbcType=VARCHAR}, #{chatDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yixuan.entity.Chat" >
+    insert into chat
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="chatId != null" >
+        chat_id,
+      </if>
+      <if test="sendId != null" >
+        send_id,
+      </if>
+      <if test="accessId != null" >
+        access_id,
+      </if>
+      <if test="chatContent != null" >
+        chat_content,
+      </if>
+      <if test="chatDate != null" >
+        chat_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="chatId != null" >
+        #{chatId,jdbcType=INTEGER},
+      </if>
+      <if test="sendId != null" >
+        #{sendId,jdbcType=VARCHAR},
+      </if>
+      <if test="accessId != null" >
+        #{accessId,jdbcType=VARCHAR},
+      </if>
+      <if test="chatContent != null" >
+        #{chatContent,jdbcType=VARCHAR},
+      </if>
+      <if test="chatDate != null" >
+        #{chatDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.yixuan.entity.ChatExample" resultType="java.lang.Integer" >
+    select count(*) from chat
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update chat
+    <set >
+      <if test="record.chatId != null" >
+        chat_id = #{record.chatId,jdbcType=INTEGER},
+      </if>
+      <if test="record.sendId != null" >
+        send_id = #{record.sendId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.accessId != null" >
+        access_id = #{record.accessId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.chatContent != null" >
+        chat_content = #{record.chatContent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.chatDate != null" >
+        chat_date = #{record.chatDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update chat
+    set chat_id = #{record.chatId,jdbcType=INTEGER},
+      send_id = #{record.sendId,jdbcType=VARCHAR},
+      access_id = #{record.accessId,jdbcType=VARCHAR},
+      chat_content = #{record.chatContent,jdbcType=VARCHAR},
+      chat_date = #{record.chatDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yixuan.entity.Chat" >
+    update chat
+    <set >
+      <if test="sendId != null" >
+        send_id = #{sendId,jdbcType=VARCHAR},
+      </if>
+      <if test="accessId != null" >
+        access_id = #{accessId,jdbcType=VARCHAR},
+      </if>
+      <if test="chatContent != null" >
+        chat_content = #{chatContent,jdbcType=VARCHAR},
+      </if>
+      <if test="chatDate != null" >
+        chat_date = #{chatDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where chat_id = #{chatId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yixuan.entity.Chat" >
+    update chat
+    set send_id = #{sendId,jdbcType=VARCHAR},
+      access_id = #{accessId,jdbcType=VARCHAR},
+      chat_content = #{chatContent,jdbcType=VARCHAR},
+      chat_date = #{chatDate,jdbcType=TIMESTAMP}
+    where chat_id = #{chatId,jdbcType=INTEGER}
+  </update>
+</mapper>
