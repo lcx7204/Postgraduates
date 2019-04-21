@@ -27,4 +27,17 @@ public interface RecommendMapper {
     int updateByPrimaryKeySelective(Recommend record);
 
     int updateByPrimaryKey(Recommend record);
+
+    /**
+     * 小程序获取推荐列表
+     * @return
+     */
+    List<Recommend> getRecommendList();
+
+    /**
+     * 根据分类获取推荐列表
+     * @param recommendCategory
+     * @return
+     */
+    List<Recommend> wxGetRecommentListByCategory(String recommendCategory);
 }

@@ -279,9 +279,17 @@
     update article
     set article_name = #{articleName,jdbcType=VARCHAR},
       article_category = #{articleCategory,jdbcType=VARCHAR},
-      publish_user = #{publishUser,jdbcType=VARCHAR},
+      publish_user = #{publisupdateByPrimaryKeyhUser,jdbcType=VARCHAR},
       publish_date = #{publishDate,jdbcType=TIMESTAMP},
       praise_num = #{praiseNum,jdbcType=INTEGER}
     where article_id = #{articleId,jdbcType=VARCHAR}
   </update>
+  <!--获取文章列表信息-->
+  <select id="getArticleList" parameterType="String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+     from article where article_category like #{articleCategory}
+  </select>
 </mapper>

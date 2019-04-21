@@ -27,4 +27,27 @@ public interface KeepMapper {
     int updateByPrimaryKeySelective(Keep record);
 
     int updateByPrimaryKey(Keep record);
+
+    /**
+     * 根据用户ID查询收藏列表
+     * @param collectionUser
+     * @return
+     */
+    List<Keep> selectByUserId(String collectionUser);
+
+    /**
+     * 取消收藏
+     * @param collectionInfo
+     * @param collectionUser
+     * @return
+     */
+    int deleteKeep(@Param("collectionInfo") String collectionInfo,@Param("collectionUser") String collectionUser);
+
+    /**
+     * 检测是否已经收藏该文章
+     * @param collectionInfo
+     * @param collectionUser
+     * @return
+     */
+    Keep hasKeep(@Param("collectionInfo") String collectionInfo,@Param("collectionUser") String collectionUser);
 }

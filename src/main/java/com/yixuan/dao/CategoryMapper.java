@@ -27,4 +27,17 @@ public interface CategoryMapper {
     int updateByPrimaryKeySelective(Category record);
 
     int updateByPrimaryKey(Category record);
+
+    /**
+     * 获取分类信息
+     * @return
+     */
+    List<Category> getCategoryList();
+
+    /**
+     * 小程序获取推荐模块分类信息
+     * @param categoryType
+     * @return
+     */
+    List<Category> wxGetRecommendCategory(String categoryType);
 }

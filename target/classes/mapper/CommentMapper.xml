@@ -208,4 +208,10 @@
       comment_info = #{commentInfo,jdbcType=VARCHAR}
     where comment_id = #{commentId,jdbcType=VARCHAR}
   </update>
+  <!--根据文章ID获取评论-->
+  <select id="selectByArticleId" parameterType="String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from comment where comment_info=#{commentInfo} order by comment_date desc
+  </select>
 </mapper>

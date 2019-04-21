@@ -161,4 +161,18 @@
     set category_name = #{categoryName,jdbcType=VARCHAR}
     where category_id = #{categoryId,jdbcType=VARCHAR}
   </update>
+  <!--获取分类信息-->
+  <select id="getCategoryList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from category
+    order by category_id asc
+  </select>
+
+  <!--小程序获取推荐模块分类信息-->
+  <select id="wxGetRecommendCategory" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+     from category where category_id like #{categoryType}
+  </select>
 </mapper>

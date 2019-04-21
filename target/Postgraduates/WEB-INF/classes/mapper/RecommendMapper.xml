@@ -288,4 +288,16 @@
       price = #{price,jdbcType=DECIMAL}
     where recommend_id = #{recommendId,jdbcType=VARCHAR}
   </update>
+  <!--小程序获取推荐列表-->
+  <select id="getRecommendList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from recommend group by recommend_category order by publish_date
+  </select>
+  <!--根据分类获取推荐列表-->
+  <select id="wxGetRecommentListByCategory" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+     from recommend where recommend_category = #{recommendCategory}
+  </select>
 </mapper>

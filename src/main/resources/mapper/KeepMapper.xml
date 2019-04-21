@@ -193,4 +193,20 @@
       collection_date = #{collectionDate,jdbcType=TIMESTAMP}
     where collection_id = #{collectionId,jdbcType=VARCHAR}
   </update>
+  <!--根据用户ID获取收藏列表-->
+  <select id="selectByUserId" parameterType="String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from keep where collection_user = #{collectionUser}
+  </select>
+  <!--取消收藏-->
+  <delete id="deleteKeep" parameterType="map">
+    delete from keep where collection_info = #{collectionInfo} and collection_user = #{collectionUser}
+  </delete>
+  <!--检测是否已经收藏该文章-->
+  <select id="hasKeep" parameterType="map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from keep where collection_info = #{collectionInfo} and collection_user = #{collectionUser}
+  </select>
 </mapper>

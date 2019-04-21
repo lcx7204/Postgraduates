@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Postgraduates:war exploded">
     <output-path>$PROJECT_DIR$/target/Postgraduates</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Postgraduates</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -33,6 +40,17 @@
           <element id="library" level="project" name="Maven: com.github.miemiedev:mybatis-paginator:1.2.17" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.2" />
           <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.4" />
+          <element id="library" level="project" name="Maven: com.thetransactioncompany:cors-filter:1.7.1" />
+          <element id="library" level="project" name="Maven: com.thetransactioncompany:java-property-utils:1.9" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.0.1" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.57" />
+          <element id="library" level="project" name="Maven: net.sf.trove4j:core:3.1.0" />
+          <element id="library" level="project" name="Maven: net.sf.json-lib:json-lib:2.3" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
+          <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">

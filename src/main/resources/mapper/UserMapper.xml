@@ -233,4 +233,10 @@
   <select id="login" parameterType="java.lang.String" resultMap="BaseResultMap">
     select * from user where nick_name=#{nickName} and password = #{password}
   </select>
+  <!---->
+  <select id="wxGetUserByOpenId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+     from user where open_id = #{openId} and user_type = 0
+  </select>
 </mapper>

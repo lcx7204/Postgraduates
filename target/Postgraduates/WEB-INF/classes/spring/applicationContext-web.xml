@@ -5,6 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:property-placeholder  location="classpath:system.properties"  file-encoding="UTF-8" />
     <!--启动spring组件自动扫描机制-->
     <context:component-scan base-package="com.yixuan" annotation-config="true"/>
     <!-- 开启注解映射的支持 -->
@@ -20,4 +22,32 @@
     <context:component-scan base-package="com.yixuan.controller"></context:component-scan>
     <!-- 开启注解 -->
     <context:annotation-config></context:annotation-config>
+
+    <!-- 配置登录拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!-- 拦截所有mvc控制器 -->
+            <mvc:mapping path="/**"/>
+            <!-- mvc:exclude-mapping是另外一种拦截，它可以在你后来的测试中对某个页面进行不拦截，这样就不用在
+                LoginInterceptor的preHandler方法里面获取不拦截的请求uri地址了(优选) -->
+            <mvc:exclude-mapping path="/user/login" />
+            <mvc:exclude-mapping path="/category/getCategoryList"/>
+            <mvc:exclude-mapping path="/article/wx*"/>
+            <mvc:exclude-mapping path="/user/wx*"/>
+            <mvc:exclude-mapping path="/recommend/wx*"/>
+            <mvc:exclude-mapping path="/article/getArticleById"/>
+            <mvc:exclude-mapping path="/recommend/findRecommendById"/>
+            <mvc:exclude-mapping path="/comment/getCommentByArticleId"/>
+            <mvc:exclude-mapping path="/category/wx*"/>
+            <mvc:exclude-mapping path="/recommend/wx*"/>
+            <bean class="com.yixuan.util.AjaxFilter"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!--文件上传解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760"/>
+        <property name="maxInMemorySize" value="4096" />
+        <property name="defaultEncoding" value="UTF-8" />
+    </bean>
 </beans>

@@ -33,4 +33,11 @@ public interface ArticleMapper {
     int updateByPrimaryKeyWithBLOBs(Article record);
 
     int updateByPrimaryKey(Article record);
+
+    /**
+     * 获取文章列表信息
+     * @param articleCategory
+     * @return
+     */
+    List<Article> getArticleList(String articleCategory);
 }
