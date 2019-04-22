@@ -17,6 +17,8 @@ public class Article {
 
     private String articleContent;
 
+    private User User;
+
     public String getArticleId() {
         return articleId;
     }
@@ -71,5 +73,13 @@ public class Article {
 
     public void setArticleContent(String articleContent) {
         this.articleContent = articleContent == null ? null : articleContent.trim();
+    }
+
+    public com.yixuan.entity.User getUser() {
+        return User;
+    }
+
+    public void setUser(com.yixuan.entity.User user) {
+        User = user;
     }
 }

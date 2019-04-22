@@ -8,6 +8,9 @@
     <result column="publish_user" property="publishUser" jdbcType="VARCHAR" />
     <result column="publish_date" property="publishDate" jdbcType="TIMESTAMP" />
     <result column="praise_num" property="praiseNum" jdbcType="INTEGER" />
+    <!--一对一映射User实体-->
+    <result property="user.avatorUrl" column="avator_url" jdbcType="VARCHAR" />
+    <result property="user.nickName" column="nick_name" jdbcType="VARCHAR" />
   </resultMap>
   <resultMap id="ResultMapWithBLOBs" type="com.yixuan.entity.Article" extends="BaseResultMap" >
     <result column="article_content" property="articleContent" jdbcType="LONGVARCHAR" />

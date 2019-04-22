@@ -6,6 +6,11 @@
     <result column="collection_user" property="collectionUser" jdbcType="VARCHAR" />
     <result column="collection_info" property="collectionInfo" jdbcType="VARCHAR" />
     <result column="collection_date" property="collectionDate" jdbcType="TIMESTAMP" />
+    <!--一对一实体映射-->
+    <result column="article_id" property="article.articleId" jdbcType="VARCHAR" />
+    <result column="article_name" property="article.articleName" jdbcType="VARCHAR" />
+    <result column="article_content" property="article.articleContent" jdbcType="LONGVARCHAR" />
+    <result column="publish_date" property="article.publishDate" jdbcType="TIMESTAMP" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -195,9 +200,8 @@
   </update>
   <!--根据用户ID获取收藏列表-->
   <select id="selectByUserId" parameterType="String" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from keep where collection_user = #{collectionUser}
+    select *
+    from keep k,article a where k.collection_info = a.article_id and collection_user = #{collectionUser}
   </select>
   <!--取消收藏-->
   <delete id="deleteKeep" parameterType="map">

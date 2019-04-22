@@ -11,6 +11,8 @@ public class Keep {
 
     private Date collectionDate;
 
+    private Article article;
+
     public String getCollectionId() {
         return collectionId;
     }
@@ -41,5 +43,13 @@ public class Keep {
 
     public void setCollectionDate(Date collectionDate) {
         this.collectionDate = collectionDate;
+    }
+
+    public Article getArticle() {
+        return article;
+    }
+
+    public void setArticle(Article article) {
+        this.article = article;
     }
 }

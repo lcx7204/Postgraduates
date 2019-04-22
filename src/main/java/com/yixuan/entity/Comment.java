@@ -13,6 +13,8 @@ public class Comment {
 
     private String commentInfo;
 
+    private User user;
+
     public String getCommentId() {
         return commentId;
     }
@@ -51,5 +53,13 @@ public class Comment {
 
     public void setCommentInfo(String commentInfo) {
         this.commentInfo = commentInfo == null ? null : commentInfo.trim();
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

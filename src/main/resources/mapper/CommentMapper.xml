@@ -7,6 +7,9 @@
     <result column="comment_date" property="commentDate" jdbcType="TIMESTAMP" />
     <result column="comment_user" property="commentUser" jdbcType="VARCHAR" />
     <result column="comment_info" property="commentInfo" jdbcType="VARCHAR" />
+    <!--一对一映射User实体-->
+    <result property="user.avatorUrl" column="avator_url" jdbcType="VARCHAR" />
+    <result property="user.nickName" column="nick_name" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -210,8 +213,7 @@
   </update>
   <!--根据文章ID获取评论-->
   <select id="selectByArticleId" parameterType="String" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from comment where comment_info=#{commentInfo} order by comment_date desc
+    select *
+    from comment ct,user u where ct.comment_user = u.user_id and ct.comment_info=#{commentInfo} order by ct.comment_date desc
   </select>
 </mapper>
