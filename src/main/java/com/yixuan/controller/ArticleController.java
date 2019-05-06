@@ -127,4 +127,15 @@ public class ArticleController {
     public ServerResponse wxGetArticleList(String articleCategory){
         return iArticleService.wxGetArticleList(articleCategory);
     }
+
+    /**
+     * 小程序关键字搜索
+     * @param articleName
+     * @return
+     */
+    @RequestMapping(value = "/wxGetArticleByKey",method = RequestMethod.GET)
+    @ResponseBody
+    public ServerResponse wxGetArticleByKey(String articleName){
+        return iArticleService.wxGetArticleByKey(articleName);
+    }
 }

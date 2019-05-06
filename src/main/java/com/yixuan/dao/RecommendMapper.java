@@ -35,6 +35,12 @@ public interface RecommendMapper {
     List<Recommend> getRecommendList();
 
     /**
+     * 管理员分页获取推荐信息
+     * @return
+     */
+    List<Recommend> getRecommendListByAdmin();
+
+    /**
      * 根据分类获取推荐列表
      * @param recommendCategory
      * @return

@@ -54,4 +54,11 @@ public interface IArticleService {
      * @return
      */
     ServerResponse<List<Article>> wxGetArticleList(String articleCategory);
+
+    /**
+     * 小程序根据关键字搜索
+     * @param articleName
+     * @return
+     */
+    ServerResponse<List<Article>> wxGetArticleByKey(String articleName);
 }

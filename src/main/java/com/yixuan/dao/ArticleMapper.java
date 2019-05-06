@@ -4,6 +4,7 @@ import com.yixuan.entity.Article;
 import com.yixuan.entity.ArticleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.web.bind.annotation.RequestParam;
 
 public interface ArticleMapper {
     int countByExample(ArticleExample example);
@@ -40,4 +41,13 @@ public interface ArticleMapper {
      * @return
      */
     List<Article> getArticleList(String articleCategory);
+
+    List<Article> getArticleListByAdmin(@Param("articleCategory1") String articleCategory1, @Param("articleCategory2") String articleCategory2);
+
+    /**
+     * 根据文章标题搜索文章
+     * @param articleName
+     * @return
+     */
+    List<Article> selectByArticleName(String articleName);
 }

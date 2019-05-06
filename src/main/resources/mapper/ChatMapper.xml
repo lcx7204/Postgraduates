@@ -7,6 +7,9 @@
     <result column="access_id" property="accessId" jdbcType="VARCHAR" />
     <result column="chat_content" property="chatContent" jdbcType="VARCHAR" />
     <result column="chat_date" property="chatDate" jdbcType="TIMESTAMP" />
+    <!--一对一映射User实体-->
+    <result property="user.avatorUrl" column="avator_url" jdbcType="VARCHAR" />
+    <result property="user.nickName" column="nick_name" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -208,4 +211,9 @@
       chat_date = #{chatDate,jdbcType=TIMESTAMP}
     where chat_id = #{chatId,jdbcType=INTEGER}
   </update>
+  <!--获取聊天记录-->
+  <select id="getUserChat" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List" />
+     from chat where access_id = #{userId} or send_id = #{userId} order by chat_date asc
+  </select>
 </mapper>

@@ -27,4 +27,11 @@ public interface ChatMapper {
     int updateByPrimaryKeySelective(Chat record);
 
     int updateByPrimaryKey(Chat record);
+
+    /**
+     * 获取聊天记录
+     * @param userId
+     * @return
+     */
+    List<Chat> getUserChat(String userId);
 }

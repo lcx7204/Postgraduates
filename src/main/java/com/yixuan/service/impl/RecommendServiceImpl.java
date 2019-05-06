@@ -50,7 +50,7 @@ public class RecommendServiceImpl implements IRecommendService {
     @Override
     public ServerResponse<PageInfo> getRecommendList(Integer pageNum, Integer pageSize) {
         PageHelper.startPage(pageNum,pageSize);
-        List<Recommend> recommendList = recommendMapper.getRecommendList();
+        List<Recommend> recommendList = recommendMapper.getRecommendListByAdmin();
         for(Recommend recommend:recommendList){
             recommend.setRecommendIcon(recommendUrl+recommend.getRecommendIcon());
         }

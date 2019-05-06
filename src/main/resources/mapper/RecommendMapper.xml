@@ -288,6 +288,12 @@
       price = #{price,jdbcType=DECIMAL}
     where recommend_id = #{recommendId,jdbcType=VARCHAR}
   </update>
+  <!--管理员获取分页信息-->
+  <select id="getRecommendListByAdmin" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from recommend order by publish_date
+  </select>
   <!--小程序获取推荐列表-->
   <select id="getRecommendList" resultMap="BaseResultMap">
     select

@@ -13,6 +13,8 @@ public class Chat {
 
     private Date chatDate;
 
+    private User User;
+
     public Integer getChatId() {
         return chatId;
     }
@@ -51,5 +53,13 @@ public class Chat {
 
     public void setChatDate(Date chatDate) {
         this.chatDate = chatDate;
+    }
+
+    public com.yixuan.entity.User getUser() {
+        return User;
+    }
+
+    public void setUser(com.yixuan.entity.User user) {
+        User = user;
     }
 }

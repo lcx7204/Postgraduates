@@ -9,6 +9,7 @@ import com.yixuan.service.IArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -47,7 +48,7 @@ public class ArticleServiceImpl implements IArticleService {
     @Override
     public ServerResponse<PageInfo> getArticleList(Integer pageNum, Integer pageSize) {
         PageHelper.startPage(pageNum,pageSize);
-        List<Article> articleList = articleMapper.getArticleList("10%");
+        List<Article> articleList = articleMapper.getArticleListByAdmin("10%","30%");
         PageInfo pageResult = new PageInfo(articleList);
         return ServerResponse.createBySuccess(pageResult);
     }
@@ -110,6 +111,22 @@ public class ArticleServiceImpl implements IArticleService {
     public ServerResponse<List<Article>> wxGetArticleList(String articleCategory) {
         //只获取分类为10开头的
         List<Article> articleList = articleMapper.getArticleList(articleCategory);
+        return ServerResponse.createBySuccess(articleList);
+    }
+
+    /**
+     * 小程序根据关键字搜索
+     * @param articleName
+     * @return
+     */
+    @Override
+    public ServerResponse<List<Article>> wxGetArticleByKey(String articleName) {
+        if (articleName == null || articleName == ""){
+            return ServerResponse.createByErrorMessage("请输入内容后搜索");
+        }
+        List<Article> articleList = new ArrayList<>();
+        articleName = "%"+articleName+"%";
+        articleList = articleMapper.selectByArticleName(articleName);
         return ServerResponse.createBySuccess(articleList);
     }
 }

@@ -33,4 +33,6 @@ public interface UserMapper {
     User login(@Param("nickName") String nickName,@Param("password") String password);
 
     User wxGetUserByOpenId(String openId);
+
+    List<User> getUserList();
 }
