@@ -8,118 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b63b53c5-25b9-4000-9152-0e873745c7c9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/service/IChatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/ChatServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/websocket/MyHandShakeInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/websocket/MyWebSocketHander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Postgraduates_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Postgraduates_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_57.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_57.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thetransactioncompany_cors_filter_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thetransactioncompany_cors_filter_1_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thetransactioncompany_java_property_utils_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thetransactioncompany_java_property_utils_1_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_trove4j_core_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_trove4j_core_3_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_0_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_0_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postgraduates.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Postgraduates.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/ChatMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/ChatMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/RecommendMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/RecommendMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/entity/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/entity/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/service/IArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/service/IArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/RecommendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/RecommendServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/util/MyHandShakeInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/util/MyWebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yixuan/websocket/MyWebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yixuan/util/MyWebSocketHander.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ChatMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ChatMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RecommendMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RecommendMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/system.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Postgraduates.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/ArticleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/ArticleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/ChatMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/ChatMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/RecommendMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/RecommendMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/entity/Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/entity/Chat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/service/IArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/service/IArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/service/impl/ArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/service/impl/RecommendServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/service/impl/RecommendServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/util/MyHandShakeInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/util/MyWebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/com/yixuan/util/MyWebSocketHander.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/ChatMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/ChatMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/RecommendMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/RecommendMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/spring/applicationContext-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/spring/applicationContext-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/classes/system.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/lib/commons-lang-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Postgraduates/WEB-INF/lib/ezmorph-1.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/dao/ArticleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/dao/ArticleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/dao/ChatMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/dao/ChatMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/dao/RecommendMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/dao/RecommendMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/entity/Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/entity/Chat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/service/IArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/service/IArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/service/impl/ArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/service/impl/RecommendServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yixuan/service/impl/RecommendServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/util/MyHandShakeInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/util/MyWebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yixuan/util/MyWebSocketHander.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ChatMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ChatMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RecommendMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/RecommendMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/system.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/system.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/text/TestMybatis.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -156,106 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/controller/ArticleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3232#3233#0" expanded="true" />
-                <element signature="e#3293#3294#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6644">
-              <caret line="302" column="109" selection-start-line="302" selection-start-column="109" selection-end-line="302" selection-end-column="109" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/ArticleServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/RecommendServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/dao/RecommendMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RecommendMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6402">
-              <caret line="291" column="37" selection-start-line="291" selection-start-column="14" selection-end-line="291" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/controller/RecommendController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/dao/ArticleMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="44" column="116" selection-start-line="44" selection-start-column="116" selection-end-line="44" selection-end-column="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/dao/CategoryMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/dao/ChatMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="322">
+              <caret line="257" column="11" lean-forward="true" selection-start-line="257" selection-start-column="11" selection-end-line="257" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -290,7 +88,6 @@
       <find>collectionInfo</find>
       <find>hasKeep</find>
       <find>selectByArticleId</find>
-      <find>wxGetArticleList</find>
       <find>wxGetRecommentListByCategory</find>
       <find>User</find>
       <find>LONGTEXT</find>
@@ -302,6 +99,7 @@
       <find>json-lib</find>
       <find>getRecommendList</find>
       <find>getArticleList</find>
+      <find>wxGetArticleList</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -362,9 +160,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/RecommendMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/RecommendServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yixuan/dao/RecommendMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yixuan/dao/ArticleMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" />
       </list>
     </option>
   </component>
@@ -415,8 +213,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Postgraduates" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Postgraduates" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Postgraduates" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Postgraduates" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Postgraduates" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Postgraduates" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Postgraduates" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Postgraduates" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Postgraduates" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Postgraduates" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="spring" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Postgraduates" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Postgraduates" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -434,67 +278,6 @@
               <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yixuan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yixuan" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yixuan" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yixuan" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yixuan" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Postgraduates" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yixuan" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Postgraduates" type="b2602c69:ProjectViewProjectNode" />
@@ -523,7 +306,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="D:/Program Files/Apache Software Foundation/apache-tomcat-8.0.35-windows-x64/apache-tomcat-8.0.35-1/webapps/upload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -761,11 +544,16 @@
       <workItem from="1557060165973" duration="43000" />
       <workItem from="1557061099620" duration="6717000" />
       <workItem from="1557108209994" duration="25000" />
+      <workItem from="1557298364622" duration="547000" />
+      <workItem from="1557302111896" duration="239000" />
+      <workItem from="1557304065176" duration="136000" />
+      <workItem from="1557304237908" duration="1730000" />
+      <workItem from="1557318932505" duration="1276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192696000" />
+    <option name="totallyTimeSpent" value="196624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,9 +566,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.18550107" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822694" visible="true" weight="0.21588486" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1023,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-websocket.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1198,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+        <state relative-caret-position="2706">
+          <caret line="127" column="37" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3232#3233#0" expanded="true" />
@@ -1208,16 +988,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/ArticleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6644">
-          <caret line="302" column="109" selection-start-line="302" selection-start-column="109" selection-end-line="302" selection-end-column="109" />
+        <state relative-caret-position="2464">
+          <caret line="112" column="64" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/RecommendServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
+        <state relative-caret-position="1056">
           <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1241,7 +1024,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/controller/RecommendController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="814">
           <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1251,8 +1034,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/dao/ArticleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" column="116" selection-start-line="44" selection-start-column="116" selection-end-line="44" selection-end-column="116" />
+        <state relative-caret-position="418">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1270,13 +1053,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yixuan/service/impl/ArticleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="257" column="11" lean-forward="true" selection-start-line="257" selection-start-column="11" selection-end-line="257" selection-end-column="11" />
         </state>
       </provider>
     </entry>
